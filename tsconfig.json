@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+	"declaration": true,
+	"emitDecoratorMetadata": true,
+	"experimentalDecorators": true,
+	"allowSyntheticDefaultImports": true,
+	"strictBindCallApply": false,
+	"forceConsistentCasingInFileNames": false,
+	"noFallthroughCasesInSwitch": false,
+    "target": "ES6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+	"strictNullChecks": false,
+	"noImplicitAny": false,
+	"incremental": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "jsx": "react",
+    "paths": {
+      "payload/generated-types": ["./src/payload-types.ts"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "build"],
+  "ts-node": {
+    "transpileOnly": true,
+    "swc": true
+  }
+}
