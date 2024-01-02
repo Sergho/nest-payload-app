@@ -13,7 +13,7 @@ services:
     depends_on:
       - mongo
     env_file:
-      - .env
+      - .env.example
 
   mongo:
     image: mongo:latest

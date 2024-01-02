@@ -12,8 +12,6 @@ const start = async () => {
   await payload.init({
     // # Секретный ключ, который использует для шифрования токенов авторизации
     secret: process.env.PAYLOAD_SECRET,
-    // # Строка для подключения к mongoDB
-    mongoURL: process.env.MONGODB_URI,
     express: app,
     onInit: async () => {
       payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`);
@@ -26,7 +24,7 @@ const start = async () => {
   app.use(nest.getHttpAdapter().getInstance());
 
 
-  app.listen(3000);
+  app.listen(3123);
 };
 
 
